@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243, 128, 62);
+}
+
+.group {
+    width: 100%;
+    margin-left: 20%;
+}
+
+.star {
+    color: red;
+}
+
+.form-group {
+    width: 60%;
+    padding: 20px;
+    font-size: 15px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: bisque;
+}
+
+#head {
+    text-align: center;
+}
+
+#content1 {
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+#content1 label {
+    padding: 1px;
+    margin: 2px;
+}
+
+.name {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+}
+
+textarea {
+    height: 125px;
+    resize: vertical;
+    max-width: 100%;
+}
+
+.table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tablediv {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.th1 {
+    padding-left: 60px;
+    text-align: center;
+}
+
+.rating-wrapper label:after {
+    content: "\2605";
+    position: absolute;
+    font-size: 35px;
+    display: inline;
+    color: yellow;
+    opacity: 0;
+}
+
+.rating-wrapper label:hover:after {
+    opacity: 1;
+}
+
+.rating-wrapper {
+    margin-bottom: 0px;
+}
+
+.rating {
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: #000;
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
+    color: yellow;
+}
+
+button {
+    background-color: darkgrey;
+    border: 1px solid;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
